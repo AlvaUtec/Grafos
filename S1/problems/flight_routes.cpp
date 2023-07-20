@@ -37,7 +37,7 @@ void solve(){
     }
     dfs(0,0);
     for(int i=0;i<n;i++){
-        if (!vis[i]){
+        if (!visited[i]){
             cout<<"NO\n"<<1<<" "<<i+1<<"\n";
             return;
         }
@@ -47,7 +47,7 @@ void solve(){
     memset(visited,0,sizeof(visited));
     dfs(0,1);
     for(int i=0;i<n;i++){
-        if (!vis[i]){
+        if (!visited[i]){
             cout<<"NO\n"<<i+1<<" "<<1<<"\n";
             return;
         }
