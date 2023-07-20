@@ -44,7 +44,7 @@ void solve(){
     }
 
     // Memset inicializa con 0 todos los valores de visites, o sea, reset
-    memset(visited,0,sizeof(visited));
+    memset(visited,false,sizeof(visited));
     dfs(0,1);
     for(int i=0;i<n;i++){
         if (!visited[i]){
